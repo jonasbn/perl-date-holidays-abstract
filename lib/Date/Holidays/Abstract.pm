@@ -1,12 +1,12 @@
 package Date::Holidays::Abstract;
 
-# $Id: Abstract.pm 1339 2004-05-23 15:56:17Z jonasbn $
+# $Id: Abstract.pm 1349 2004-05-26 11:01:10Z jonasbn $
 
 use strict;
 use vars qw($VERSION);
 use base qw(Class::Virtually::Abstract);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 __PACKAGE__->virtual_methods(qw(is_holiday holidays));
 
@@ -54,31 +54,80 @@ implement:
 
 =back
 
-Date::Holidays uses the requirements defined by this module and this
+=head2 is_holiday
+
+Should at least take 3 arguments:
+
+=over
+
+=item year, four digits
+
+=item month, between 1-12
+
+=item day, between 1-31
+
+=back
+
+The return value from is holiday is either a 1 or 0 indicating true of
+false, indicating whether the specified date is a holiday in the given
+country's national calendar.
+
+Additional arguments are at the courtesy of the author of the using
+module/class.
+
+=head2 holidays
+
+Should at least take one argument:
+
+=over
+
+=item year, four digits
+
+=back
+
+Returns a reference to a hash, where the keys are date represented as
+four digits. The two first representing month (01-12) and the last two
+representing day (01-31).
+
+The value for the key in question is the local name for the holiday
+indicated by the day. The resultset will of course vary depending on
+the given country's national holiday. 
+
+Additional arguments are at the courtesy of the author of the using
+module/class.
+
+--
+
+L<Date::Holidays> uses the requirements defined by this module and this
 module can therefor be used with success in conjunction with this.
 
-This is an alternative to making a super class. I have considered
-programming a super class, but since create a super class for a bunch
+This is an alternative to a SUPER class. I have given a lot of thought to
+programming a SUPER class, but since creating a super class for a bunch
 of modules implementing handling of national holidays, an abstract
 class seemed a better choice.
 
-A super class for Date::Holidays, could implement is_holiday and
-holidays and expect these to be overloaded. Overloading would be
-necessary since nothing intelligent can be said about holidays without
-specifying a nationality (a part from holidays being nice but too few),
-and the implemented methods would be empty bodies returning empty
-result sets.
+A proposed SUPER class for Date::Holidays::*: L<Date::Holidays::Super>
+should implement B<is_holiday> and B<holidays> and expect these to be
+overloaded. 
+
+Overloading would be necessary since nothing intelligent can be said
+about holidays without specifying a nationality (a part from holidays
+being nice but too few), and the implemented methods would be empty
+bodies returning empty result sets.
 
 So I am more for an abstract class and as stated I consider this class
-an experiment and I am still considering implementing Date::Holidays::Super.
+an experiment and I have implemented L<Date::Holidays::Super> as an
+alternative.
 
-Suggestions for changes to this or extensions are more than welcome.
+Suggestions for changes and extensions are more than welcome.
 
 =head1 SEE ALSO
 
 =over
 
 =item Date::Holidays
+
+=item Date::Holidays::Super
 
 =item Date::Holidays::DE
 
@@ -108,13 +157,13 @@ or by sending mail to
 
 =head1 AUTHOR
 
-Jonas B. Nielsen, (jonasbn) - E<lt>jonasbn@cpan.orgE<gt>
+Jonas B. Nielsen, (jonasbn) - C<< <jonasbn@cpan.org> >>
 
 =head1 COPYRIGHT
 
 Date-Holidays-Abstract is (C) by Jonas B. Nielsen, (jonasbn) 2004
 
 Date-Holidays-Abstract is released under the Artistic License
-See <http://www.perl.com/language/misc/Artistic.html> for details.
+See: (http://www.perl.com/language/misc/Artistic.html) for details.
 
 =cut
