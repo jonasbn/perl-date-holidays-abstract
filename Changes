@@ -1,8 +1,12 @@
 Changes file for Date-Holidays-Abstract
 
-$Id: Changes 1350 2004-05-26 11:03:29Z jonasbn $
+$Id: Changes 1371 2004-05-31 07:47:04Z jonasbn $
 
-0.02 Released 26th. of May 2004
+0.03 Released 31st. of May 2004 (Update not necessary)
+
+- Indented code in POD after top from RJBS
+
+0.02 Released 26th. of May 2004 (Update not necessary)
 
 - Updated this documentation with more in-depth descriptions of the 
   requirements.

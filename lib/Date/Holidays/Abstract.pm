@@ -1,12 +1,12 @@
 package Date::Holidays::Abstract;
 
-# $Id: Abstract.pm 1349 2004-05-26 11:01:10Z jonasbn $
+# $Id: Abstract.pm 1371 2004-05-31 07:47:04Z jonasbn $
 
 use strict;
 use vars qw($VERSION);
 use base qw(Class::Virtually::Abstract);
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 __PACKAGE__->virtual_methods(qw(is_holiday holidays));
 
@@ -20,16 +20,16 @@ Date::Holidays::Abstract - an abstract class for Date::Holidays::* modules
 
 =head1 SYNOPSIS
 
-package Date::Holidays::NN;
-use base qw(Date::Holidays::Abstract);
-
-sub holidays {
-...
-}
-
-sub is_holiday {
-...
-}
+	package Date::Holidays::NN;
+	use base qw(Date::Holidays::Abstract);
+	
+	sub holidays {
+	...
+	}
+	
+	sub is_holiday {
+	...
+	}
 
 =head1 ABSTRACT
 
