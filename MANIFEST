@@ -1,3 +1,4 @@
+Build.PL
 Changes
 INSTALL
 lib/Date/Holidays/Abstract.pm
@@ -6,7 +7,9 @@ MANIFEST			This list of files
 META.yml			Module meta-data (added by MakeMaker)
 README
 t/00.load.t
+t/critic.t
 t/fail.t
+t/kwalitee.t
 t/LL.pm
 t/NN.pm
 t/pod-coverage.t

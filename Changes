@@ -1,14 +1,35 @@
 Changes file for Date-Holidays-Abstract
 
-$Id: Changes 1371 2004-05-31 07:47:04Z jonasbn $
+$Id: Changes 1814 2007-03-12 21:16:19Z jonasbn $
+
+0.04 Released 12. of March 2007 (Update not necessary)
+
+- Updated MANIFEST.SKIP to a more contemporary version
+
+- Updated README
+
+- Updated POD, based on output from t/critic
+
+- Added use warnings statement, based on output from t/critic.t
+
+- Added t/critic.t see Test::Perl::Critic
+
+- Changed to Module::Build as primary build system
+
+- Added t/kwalitee.t see Test::Kwalitee
+
+- Corrected a spelling error in this file s/top/tip/
+
 
 0.03 Released 31st. of May 2004 (Update not necessary)
 
-- Indented code in POD after top from RJBS
+- Indented code in POD after tip from RJBS
+
 
 0.02 Released 26th. of May 2004 (Update not necessary)
 
 - Updated this documentation with more in-depth descriptions of the 
   requirements.
+
 
 0.01 Released 22nd. of May 2004

@@ -1,19 +1,23 @@
-README file for Date-Holidays-Abstract
-
-$Id: README 1350 2004-05-26 11:03:29Z jonasbn $
-
 NAME
     Date::Holidays::Abstract - an abstract class for Date::Holidays::*
     modules
 
 SYNOPSIS
-    package Date::Holidays::NN; use base qw(Date::Holidays::Abstract);
+            package Date::Holidays::NN;
+            use base qw(Date::Holidays::Abstract);
+        
+            sub holidays {
+            ...
+            }
+        
+            sub is_holiday {
+            ...
+            }
 
-    sub holidays { ... }
+VERSION
+    This POD describes version 0.04 of Date::Holidays::Abstract
 
-    sub is_holiday { ... }
-
-ABSTRACT
+DESCRIPTION
     This module is an abstract class intended for Date::Holidays::*
 
     The goal is to have all the existing and future modules implement the
@@ -21,7 +25,6 @@ ABSTRACT
     polymorphic context or can be easily adapted into the Date::Holidays
     class.
 
-DESCRIPTION
     If you want to use Date::Holidays::Abstract and want to comply with my
     suggestions to the methods that ought to be implemented, you should
     implement:
@@ -69,9 +72,9 @@ DESCRIPTION
     bunch of modules implementing handling of national holidays, an abstract
     class seemed a better choice.
 
-    A proposed SUPER class for Date::Holidays::*: Date::Holidays::Super
-    should implement is_holiday and holidays and expect these to be
-    overloaded.
+    A proposed SUPER class for Date::Holidays::* is however implemented see:
+    Date::Holidays::Super implement is_holiday and holidays and expect these
+    to be overloaded.
 
     Overloading would be necessary since nothing intelligent can be said
     about holidays without specifying a nationality (a part from holidays
@@ -84,6 +87,27 @@ DESCRIPTION
 
     Suggestions for changes and extensions are more than welcome.
 
+SUBROUTINES/METHODS
+    This class does not implement any methods, it is a abstract class.
+
+DIAGNOSTICS
+    This class does not implement any exceptions or error, it is a abstract
+    class.
+
+CONFIGURATION AND ENVIRONMENT
+    This class does not implement or require any special environment or
+    configuration apart from what is mentioned in DEPENDENCIES
+
+DEPENDENCIES
+    This class is subclassed from Class::Virtual, but holds not direct
+    dependencies apart from that class/module.
+
+INCOMPATIBILITIES
+    None known to the author
+
+BUGS AND LIMITATIONS
+    None known to the author
+
 SEE ALSO
     Date::Holidays
     Date::Holidays::Super
@@ -93,7 +117,7 @@ SEE ALSO
     Date::Holidays::UK
     Date::Holiday::PT
     Date::Japanese::Holiday
-    Class:Virtual
+    Class::Virtual
 
 BUGS
     Please report issues via CPAN RT:
@@ -104,11 +128,14 @@ BUGS
 
       bug-Date-Holidays-Abstract@rt.cpan.org
 
+TEST/COVERAGE
+    This module is currently at 100% test coverage
+
 AUTHOR
     Jonas B. Nielsen, (jonasbn) - "<jonasbn@cpan.org>"
 
-COPYRIGHT
-    Date-Holidays-Abstract is (C) by Jonas B. Nielsen, (jonasbn) 2004
+LICENSE AND COPYRIGHT
+    Date-Holidays-Abstract is (C) by Jonas B. Nielsen, (jonasbn) 2004-2007
 
     Date-Holidays-Abstract is released under the Artistic License See:
     (http://www.perl.com/language/misc/Artistic.html) for details.

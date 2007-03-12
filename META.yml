@@ -1,15 +1,24 @@
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Date-Holidays-Abstract
-version:      0.03
-version_from: lib/Date/Holidays/Abstract.pm
-installdirs:  site
+---
+name: Date-Holidays-Abstract
+version: 0.04
+author:
+  - 'Jonas B. Nielsen, <jonasbn@cpan.org>'
+abstract: an abstract class for Date::Holidays::* modules
+license: artistic
+resources:
+  license: http://opensource.org/licenses/artistic-license.php
 requires:
-    Test::Pod:                     0.95
-    File::Find:                    0
-    Test::More:                    0
-    Class::Virtual:                0
-    File::Spec:                    0
-    Test::Pod::Coverage:           0.08
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.12
+  Class::Virtual: 0
+  Test::Harness: 0
+  Test::More: 0
+provides:
+  Date::Holidays::Abstract:
+    file: lib/Date/Holidays/Abstract.pm
+    version: 0.04
+no_index:
+  directory:
+    - t
+generated_by: Module::Build version 0.2806
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2

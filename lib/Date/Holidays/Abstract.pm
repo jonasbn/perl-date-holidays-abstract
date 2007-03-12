@@ -1,12 +1,13 @@
 package Date::Holidays::Abstract;
 
-# $Id: Abstract.pm 1371 2004-05-31 07:47:04Z jonasbn $
+# $Id: Abstract.pm 1712 2007-02-13 21:42:34Z jonasbn $
 
 use strict;
+use warnings;
 use vars qw($VERSION);
 use base qw(Class::Virtually::Abstract);
 
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 __PACKAGE__->virtual_methods(qw(is_holiday holidays));
 
@@ -31,7 +32,11 @@ Date::Holidays::Abstract - an abstract class for Date::Holidays::* modules
 	...
 	}
 
-=head1 ABSTRACT
+=head1 VERSION
+
+This POD describes version 0.04 of Date::Holidays::Abstract
+
+=head1 DESCRIPTION
 
 This module is an abstract class intended for Date::Holidays::*
 
@@ -40,17 +45,15 @@ same methods, so they will have a uniform usage and can be used in
 polymorphic context or can be easily adapted into the Date::Holidays
 class.
 
-=head1 DESCRIPTION
-
 If you want to use Date::Holidays::Abstract and want to comply with my
 suggestions to the methods that ought to be implemented, you should
 implement:
 
 =over
 
-=item is_holiday
+=item B<is_holiday>
 
-=item holidays
+=item B<holidays>
 
 =back
 
@@ -106,9 +109,9 @@ programming a SUPER class, but since creating a super class for a bunch
 of modules implementing handling of national holidays, an abstract
 class seemed a better choice.
 
-A proposed SUPER class for Date::Holidays::*: L<Date::Holidays::Super>
-should implement B<is_holiday> and B<holidays> and expect these to be
-overloaded. 
+A proposed SUPER class for Date::Holidays::* is however implemented see:
+L<Date::Holidays::Super> implement B<is_holiday> and B<holidays> and expect
+these to be overloaded. 
 
 Overloading would be necessary since nothing intelligent can be said
 about holidays without specifying a nationality (a part from holidays
@@ -121,27 +124,53 @@ alternative.
 
 Suggestions for changes and extensions are more than welcome.
 
+=head1 SUBROUTINES/METHODS
+
+This class does not implement any methods, it is a abstract class.
+
+=head1 DIAGNOSTICS
+
+This class does not implement any exceptions or error, it is a abstract class.
+
+=head1 CONFIGURATION AND ENVIRONMENT
+
+This class does not implement or require any special environment or
+configuration apart from what is mentioned in DEPENDENCIES
+
+=head1 DEPENDENCIES
+
+This class is subclassed from L<Class::Virtual>, but holds not direct
+dependencies apart from that class/module.
+
+=head1 INCOMPATIBILITIES
+
+None known to the author
+
+=head1 BUGS AND LIMITATIONS
+
+None known to the author
+
 =head1 SEE ALSO
 
 =over
 
-=item Date::Holidays
+=item L<Date::Holidays>
 
-=item Date::Holidays::Super
+=item L<Date::Holidays::Super>
 
-=item Date::Holidays::DE
+=item L<Date::Holidays::DE>
 
-=item Date::Holidays::DK
+=item L<Date::Holidays::DK>
 
-=item Date::Holidays::FR
+=item L<Date::Holidays::FR>
 
-=item Date::Holidays::UK
+=item L<Date::Holidays::UK>
 
-=item Date::Holiday::PT
+=item L<Date::Holiday::PT>
 
-=item Date::Japanese::Holiday
+=item L<Date::Japanese::Holiday>
 
-=item Class:Virtual
+=item L<Class::Virtual>
 
 =back
 
@@ -155,13 +184,17 @@ or by sending mail to
 
   bug-Date-Holidays-Abstract@rt.cpan.org
 
+=head1 TEST/COVERAGE
+
+This module is currently at 100% test coverage
+
 =head1 AUTHOR
 
 Jonas B. Nielsen, (jonasbn) - C<< <jonasbn@cpan.org> >>
 
-=head1 COPYRIGHT
+=head1 LICENSE AND COPYRIGHT
 
-Date-Holidays-Abstract is (C) by Jonas B. Nielsen, (jonasbn) 2004
+Date-Holidays-Abstract is (C) by Jonas B. Nielsen, (jonasbn) 2004-2007
 
 Date-Holidays-Abstract is released under the Artistic License
 See: (http://www.perl.com/language/misc/Artistic.html) for details.
