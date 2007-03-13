@@ -1,6 +1,6 @@
 ---
 name: Date-Holidays-Abstract
-version: 0.04
+version: 0.05
 author:
   - 'Jonas B. Nielsen, <jonasbn@cpan.org>'
 abstract: an abstract class for Date::Holidays::* modules
@@ -14,7 +14,7 @@ requires:
 provides:
   Date::Holidays::Abstract:
     file: lib/Date/Holidays/Abstract.pm
-    version: 0.04
+    version: 0.05
 no_index:
   directory:
     - t

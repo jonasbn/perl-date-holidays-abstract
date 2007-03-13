@@ -1,13 +1,13 @@
 package Date::Holidays::Abstract;
 
-# $Id: Abstract.pm 1712 2007-02-13 21:42:34Z jonasbn $
+# $Id: Abstract.pm 1817 2007-03-13 19:49:38Z jonasbn $
 
 use strict;
 use warnings;
 use vars qw($VERSION);
 use base qw(Class::Virtually::Abstract);
 
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 __PACKAGE__->virtual_methods(qw(is_holiday holidays));
 
@@ -34,7 +34,7 @@ Date::Holidays::Abstract - an abstract class for Date::Holidays::* modules
 
 =head1 VERSION
 
-This POD describes version 0.04 of Date::Holidays::Abstract
+This POD describes version 0.05 of Date::Holidays::Abstract
 
 =head1 DESCRIPTION
 

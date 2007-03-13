@@ -12,6 +12,7 @@ t/fail.t
 t/kwalitee.t
 t/LL.pm
 t/NN.pm
+t/perlcriticrc
 t/pod-coverage.t
 t/pod.t
 t/succeed.t
