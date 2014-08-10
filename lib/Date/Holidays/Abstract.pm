@@ -5,6 +5,7 @@ package Date::Holidays::Abstract;
 use strict;
 use warnings;
 use vars qw($VERSION);
+use 5.006; #perl 5.6.0
 use base qw(Class::Virtually::Abstract);
 
 $VERSION = '0.05';

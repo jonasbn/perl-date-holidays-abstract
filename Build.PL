@@ -16,6 +16,7 @@ my $build = Module::Build->new(
 		'Test::Harness'  => 0, #core
 		'Test::More'     => 0, #core
 		'Class::Virtual' => 0,
+        'perl'           => '5.6.0',
 	},
     no_index => {
         directory => [ 't' ],
