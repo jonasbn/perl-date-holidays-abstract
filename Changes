@@ -1,7 +1,5 @@
 Changes file for Date-Holidays-Abstract
 
-$Id: Changes 1817 2007-03-13 19:49:38Z jonasbn $
-
 HEAD
 
 - Added changes.t TEST::CPAN::Changes test
