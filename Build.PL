@@ -1,7 +1,5 @@
 # Build.PL for Date::Holidays::Abstract
 
-# $Id: Build.PL,v 1.15 2006/12/07 09:23:35 jbn Exp $
-
 use strict;
 use Module::Build;
 
