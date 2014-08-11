@@ -18,6 +18,12 @@ my $build = Module::Build->new(
     },
     no_index           => { directory => ['t'], },
     create_makefile_pl => 'traditional',
+    meta_merge => {
+        resources => {
+            bugtracker => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Date-Holidays-Abstract',
+            repository => 'https://github.com/jonasbn/Date-Holidays-Abstract',
+        }
+    },
 );
 $build->create_build_script();
 
