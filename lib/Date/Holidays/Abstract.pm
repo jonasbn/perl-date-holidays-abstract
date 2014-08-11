@@ -1,11 +1,9 @@
 package Date::Holidays::Abstract;
 
-# $Id: Abstract.pm 1817 2007-03-13 19:49:38Z jonasbn $
-
 use strict;
 use warnings;
 use vars qw($VERSION);
-use 5.006; #perl 5.6.0
+use 5.006;    #perl 5.6.0
 use base qw(Class::Virtually::Abstract);
 
 $VERSION = '0.05';
@@ -18,20 +16,20 @@ __END__
 
 =head1 NAME
 
-Date::Holidays::Abstract - an abstract class for Date::Holidays::* modules
+Date::Holidays::Abstract - abstract class for Date::Holidays::* modules
 
 =head1 SYNOPSIS
 
-	package Date::Holidays::NN;
-	use base qw(Date::Holidays::Abstract);
-	
-	sub holidays {
-	...
-	}
-	
-	sub is_holiday {
-	...
-	}
+    package Date::Holidays::NN;
+    use base qw(Date::Holidays::Abstract);
+
+    sub holidays {
+    ...
+    }
+
+    sub is_holiday {
+    ...
+    }
 
 =head1 VERSION
 
@@ -95,7 +93,7 @@ representing day (01-31).
 
 The value for the key in question is the local name for the holiday
 indicated by the day. The resultset will of course vary depending on
-the given country's national holiday. 
+the given country's national holiday.
 
 Additional arguments are at the courtesy of the author of the using
 module/class.
@@ -112,7 +110,7 @@ class seemed a better choice.
 
 A proposed SUPER class for Date::Holidays::* is however implemented see:
 L<Date::Holidays::Super> implement B<is_holiday> and B<holidays> and expect
-these to be overloaded. 
+these to be overloaded.
 
 Overloading would be necessary since nothing intelligent can be said
 about holidays without specifying a nationality (a part from holidays
@@ -155,23 +153,23 @@ None known to the author
 
 =over
 
-=item L<Date::Holidays>
+=item * L<Date::Holidays>
 
-=item L<Date::Holidays::Super>
+=item * L<Date::Holidays::Super>
 
-=item L<Date::Holidays::DE>
+=item * L<Date::Holidays::DE>
 
-=item L<Date::Holidays::DK>
+=item * L<Date::Holidays::DK>
 
-=item L<Date::Holidays::FR>
+=item * L<Date::Holidays::FR>
 
-=item L<Date::Holidays::UK>
+=item * L<Date::Holidays::UK>
 
-=item L<Date::Holiday::PT>
+=item * L<Date::Holiday::PT>
 
-=item L<Date::Japanese::Holiday>
+=item * L<Date::Japanese::Holiday>
 
-=item L<Class::Virtual>
+=item * L<Class::Virtual>
 
 =back
 
@@ -179,11 +177,11 @@ None known to the author
 
 Please report issues via CPAN RT:
 
-  http://rt.cpan.org/NoAuth/Bugs.html?Dist=Date-Holidays-Abstract
+    L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Date-Holidays-Abstract>
 
 or by sending mail to
 
-  bug-Date-Holidays-Abstract@rt.cpan.org
+    L<bug-Date-Holidays-Abstract@rt.cpan.org>
 
 =head1 TEST/COVERAGE
 
@@ -195,7 +193,7 @@ Jonas B. Nielsen, (jonasbn) - C<< <jonasbn@cpan.org> >>
 
 =head1 LICENSE AND COPYRIGHT
 
-Date-Holidays-Abstract is (C) by Jonas B. Nielsen, (jonasbn) 2004-2007
+Date-Holidays-Abstract is (C) by Jonas B. Nielsen, (jonasbn) 2004-2014
 
 Date-Holidays-Abstract is released under the Artistic License
 See: (http://www.perl.com/language/misc/Artistic.html) for details.
