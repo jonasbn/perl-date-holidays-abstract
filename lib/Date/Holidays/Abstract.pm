@@ -195,7 +195,6 @@ Jonas B. Nielsen, (jonasbn) - C<< <jonasbn@cpan.org> >>
 
 Date-Holidays-Abstract is (C) by Jonas B. Nielsen, (jonasbn) 2004-2014
 
-Date-Holidays-Abstract is released under the Artistic License
-See: (http://www.perl.com/language/misc/Artistic.html) for details.
+Date-Holidays-Abstract is released under the Artistic License 2.0
 
 =cut
