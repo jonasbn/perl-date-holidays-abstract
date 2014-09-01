@@ -6,7 +6,7 @@ use vars qw($VERSION);
 use 5.006;    #perl 5.6.0
 use base qw(Class::Virtually::Abstract);
 
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 __PACKAGE__->virtual_methods(qw(is_holiday holidays));
 

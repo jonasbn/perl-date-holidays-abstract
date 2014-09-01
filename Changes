@@ -2,6 +2,10 @@ Changes file for Date-Holidays-Abstract
 
 0.07 2014.09.01, maintenance release, update not necessary
 
+- Updated requirement to Class::Virtually::Abstract instead of Class::Virtual,
+  this was the requirment used but not specified. The first is a compile time
+  check variant of the first
+
 - Updated Dist::Zilla configuration with more plugins to save more time
 
 - Bumped up license to Artistic 2.0 (was done in 0.06, forgot to mention)
