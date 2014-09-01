@@ -2,6 +2,8 @@ Changes file for Date-Holidays-Abstract
 
 HEAD
 
+- Updated Dist::Zilla configuration with more plugins to save more time
+
 - Bumped up license to Artistic 2.0 (was done in 0.06, forgot to mention)
 
 
