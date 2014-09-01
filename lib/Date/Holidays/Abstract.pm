@@ -16,7 +16,7 @@ __END__
 
 =head1 NAME
 
-Date::Holidays::Abstract - abstract class for Date::Holidays::* modules
+Date::Holidays::Abstract - abstract class for Date::Holidays::* packages
 
 =head1 SYNOPSIS
 
@@ -33,7 +33,7 @@ Date::Holidays::Abstract - abstract class for Date::Holidays::* modules
 
 =head1 VERSION
 
-This POD describes version 0.05 of Date::Holidays::Abstract
+This POD describes version 0.07 of Date::Holidays::Abstract
 
 =head1 DESCRIPTION
 
@@ -138,8 +138,8 @@ configuration apart from what is mentioned in DEPENDENCIES
 
 =head1 DEPENDENCIES
 
-This class is subclassed from L<Class::Virtual>, but holds not direct
-dependencies apart from that class/module.
+This class is subclassed from L<Class::Virtually::Abstract>, but holds
+no direct dependencies apart from that class/module.
 
 =head1 INCOMPATIBILITIES
 
@@ -170,6 +170,8 @@ None known to the author
 =item * L<Date::Japanese::Holiday>
 
 =item * L<Class::Virtual>
+
+=item * L<Class::Virtually::Abstract>
 
 =back
 
