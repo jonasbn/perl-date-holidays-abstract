@@ -1,6 +1,6 @@
 Changes file for Date-Holidays-Abstract
 
-HEAD
+0.07 2014.09.01, maintenance release, update not necessary
 
 - Updated Dist::Zilla configuration with more plugins to save more time
 
