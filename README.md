@@ -36,8 +36,8 @@ If you want to use Date::Holidays::Abstract and want to comply with my
 suggestions to the methods that ought to be implemented, you should
 implement:
 
-- __is\_holiday__
-- __holidays__
+- **is\_holiday**
+- **holidays**
 
 ## is\_holiday
 
@@ -82,7 +82,7 @@ of modules implementing handling of national holidays, an abstract
 class seemed a better choice.
 
 A proposed SUPER class for Date::Holidays::\* is however implemented see:
-[Date::Holidays::Super](https://metacpan.org/pod/Date::Holidays::Super) implement __is\_holiday__ and __holidays__ and expect
+[Date::Holidays::Super](https://metacpan.org/pod/Date::Holidays::Super) implement **is\_holiday** and **holidays** and expect
 these to be overloaded.
 
 Overloading would be necessary since nothing intelligent can be said
