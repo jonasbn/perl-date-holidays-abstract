@@ -153,8 +153,12 @@ This module is currently at 100% test coverage
 
 Jonas B. Nielsen, (jonasbn) - `<jonasbn@cpan.org>`
 
+# ACKNOWLEDGEMENTS
+
+- Olaf Alders for bug report resulting in release 0.08
+
 # LICENSE AND COPYRIGHT
 
-Date-Holidays-Abstract is (C) by Jonas B. Nielsen, (jonasbn) 2004-2014
+Date-Holidays-Abstract is (C) by Jonas B. Nielsen, (jonasbn) 2004-2019
 
 Date-Holidays-Abstract is released under the Artistic License 2.0
