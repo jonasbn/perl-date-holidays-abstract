@@ -19,8 +19,8 @@ __END__
 =begin markdown
 
 [![CPAN version](https://badge.fury.io/pl/Date-Holidays-Abstract.svg)](http://badge.fury.io/pl/Date-Holidays-Abstract)
-[![Build Status](https://travis-ci.org/jonasbn/Date-Holidays-Abstract.svg?branch=master)](https://travis-ci.org/jonasbn/Date-Holidays-Abstract)
-[![Coverage Status](https://coveralls.io/repos/jonasbn/Date-Holidays-Abstract/badge.png?branch=master)](https://coveralls.io/r/jonasbn/Date-Holidays-Abstract?branch=master)
+[![Build Status](https://travis-ci.org/jonasbn/jonasbn/perl-date-holidays-abstract.svg?branch=master)](https://travis-ci.org/jonasbn/perl-date-holidays-abstract)
+[![Coverage Status](https://coveralls.io/repos/github/jonasbn/perl-date-holidays-abstract/badge.svg)](https://coveralls.io/github/jonasbn/perl-date-holidays-abstract)
 
 =end markdown
 
