@@ -43,7 +43,7 @@ Date::Holidays::Abstract - abstract class for Date::Holidays::* packages
 
 =head1 VERSION
 
-This POD describes version 0.07 of Date::Holidays::Abstract
+This POD describes version 0.08 of Date::Holidays::Abstract
 
 =head1 DESCRIPTION
 
