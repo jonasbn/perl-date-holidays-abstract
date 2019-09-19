@@ -1,6 +1,6 @@
 [![CPAN version](https://badge.fury.io/pl/Date-Holidays-Abstract.svg)](http://badge.fury.io/pl/Date-Holidays-Abstract)
-[![Build Status](https://travis-ci.org/jonasbn/Date-Holidays-Abstract.svg?branch=master)](https://travis-ci.org/jonasbn/Date-Holidays-Abstract)
-[![Coverage Status](https://coveralls.io/repos/jonasbn/Date-Holidays-Abstract/badge.png?branch=master)](https://coveralls.io/r/jonasbn/Date-Holidays-Abstract?branch=master)
+[![Build Status](https://travis-ci.org/jonasbn/jonasbn/perl-date-holidays-abstract.svg?branch=master)](https://travis-ci.org/jonasbn/perl-date-holidays-abstract)
+[![Coverage Status](https://coveralls.io/repos/github/jonasbn/perl-date-holidays-abstract/badge.svg)](https://coveralls.io/github/jonasbn/perl-date-holidays-abstract)
 
 # NAME
 
@@ -21,7 +21,7 @@ Date::Holidays::Abstract - abstract class for Date::Holidays::\* packages
 
 # VERSION
 
-This POD describes version 0.07 of Date::Holidays::Abstract
+This POD describes version 0.08 of Date::Holidays::Abstract
 
 # DESCRIPTION
 
