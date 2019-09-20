@@ -21,7 +21,7 @@ Date::Holidays::Abstract - abstract class for Date::Holidays::\* packages
 
 # VERSION
 
-This POD describes version 0.08 of Date::Holidays::Abstract
+The documentation describes the lastest release of Date::Holidays::Abstract
 
 # DESCRIPTION
 

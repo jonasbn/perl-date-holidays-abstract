@@ -1,12 +1,17 @@
-# $Id: fail.t 1306 2004-05-13 10:59:01Z jonasbn $
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+use FindBin qw($Bin);
+use lib ("$Bin/../t", 't');
 
 use Test::More tests => 1;
+use Test::Fatal qw(dies_ok);
 
-BEGIN {
-	use lib qw(t);
-	require NN;
-};
+local $@; # protect existing $@
+eval "use Example::Abstractionless";
 
-warn "This is a fake test, please refer to the TODO file";
+diag("Diagnostics: ",  $@);
 
-ok(1);
+like($@, qr/Class Example::Abstractionless must define is_holiday, holidays for class Date::Holidays::Abstract at/, 'abstraction not implemented, you should observe a compilation error');

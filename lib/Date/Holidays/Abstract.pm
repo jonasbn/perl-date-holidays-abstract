@@ -2,7 +2,6 @@ package Date::Holidays::Abstract;
 
 use strict;
 use warnings;
-use vars qw($VERSION);
 use 5.006;    #perl 5.6.0
 use base qw(Class::Virtually::Abstract);
 
@@ -43,7 +42,7 @@ Date::Holidays::Abstract - abstract class for Date::Holidays::* packages
 
 =head1 VERSION
 
-This POD describes version 0.08 of Date::Holidays::Abstract
+The documentation describes the lastest release of Date::Holidays::Abstract
 
 =head1 DESCRIPTION
 
