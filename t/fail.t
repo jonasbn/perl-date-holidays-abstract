@@ -3,15 +3,20 @@
 use strict;
 use warnings;
 
+use English qw(-no_match_vars);
 use FindBin qw($Bin);
 use lib ("$Bin/../t", 't');
 
-use Test::More tests => 1;
+use Test::More;
 use Test::Fatal qw(dies_ok);
 
-local $@; # protect existing $@
-eval "use Example::Abstractionless";
+## no critic ( ProhibitStringyEval ProhibitComplexRegexes RequireDotMatchAnything RequireLineBoundaryMatching RequireExtendedFormatting)
 
-diag("Diagnostics: ",  $@);
+local $EVAL_ERROR = q{}; # protect existing $@ ($EVAL_ERROR)
+my $rv = eval 'use Example::Abstractionless';
 
-like($@, qr/Class Example::Abstractionless must define is_holiday, holidays for class Date::Holidays::Abstract at/, 'abstraction not implemented, you should observe a compilation error');
+diag("Diagnostics ($rv): ", $EVAL_ERROR);
+
+like($EVAL_ERROR, qr/Class Example::Abstractionless must define is_holiday, holidays for class Date::Holidays::Abstract at/, 'abstraction not implemented, we observe a compilation error');
+
+done_testing();
