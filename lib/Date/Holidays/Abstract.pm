@@ -110,7 +110,7 @@ module/class.
 --
 
 L<Date::Holidays> uses the requirements defined by this module and this
-module can therefor be used with success in conjunction with this.
+module can therefore be used with success in conjunction with this.
 
 This is an alternative to a SUPER class. I have given a lot of thought to
 programming a SUPER class, but since creating a super class for a bunch
@@ -134,11 +134,11 @@ Suggestions for changes and extensions are more than welcome.
 
 =head1 SUBROUTINES/METHODS
 
-This class does not implement any methods, it is a abstract class.
+This class does not implement any methods, it is an abstract class.
 
 =head1 DIAGNOSTICS
 
-This class does not implement any exceptions or error, it is a abstract class.
+This class does not implement any exceptions or error, it is an abstract class.
 
 =head1 CONFIGURATION AND ENVIRONMENT
 
@@ -188,11 +188,11 @@ None known to the author
 
 Please report issues via CPAN RT:
 
-    L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Date-Holidays-Abstract>
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Date-Holidays-Abstract>
 
 or by sending mail to
 
-    L<bug-Date-Holidays-Abstract@rt.cpan.org>
+C<bug-Date-Holidays-Abstract@rt.cpan.org>
 
 =head1 TEST/COVERAGE
 
