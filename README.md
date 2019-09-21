@@ -175,6 +175,7 @@ Jonas B, (jonasbn) - `<jonasbn@cpan.org>`
 
 - Mohammad S Anwar (GitHub: @manwar, CPAN: MANWAR) for PR resulting in release 0.10
 - Olaf Alders (GitHub: @oalders, CPAN: OALDERS) for bug report resulting in release 0.08
+- Ricardo Signes (GitHub: @rjbs, CPAN: RJBS) for tip resulting in release 0.03
 
 # LICENSE AND COPYRIGHT
 

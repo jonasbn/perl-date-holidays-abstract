@@ -250,6 +250,8 @@ Jonas B, (jonasbn) - C<< <jonasbn@cpan.org> >>
 
 =item * Olaf Alders (GitHub: @oalders, CPAN: OALDERS) for bug report resulting in release 0.08
 
+=item * Ricardo Signes (GitHub: @rjbs, CPAN: RJBS) for tip resulting in release 0.03
+
 =back
 
 =head1 LICENSE AND COPYRIGHT
