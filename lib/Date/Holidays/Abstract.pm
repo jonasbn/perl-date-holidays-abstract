@@ -152,11 +152,27 @@ no direct dependencies apart from that class/module.
 
 =head1 INCOMPATIBILITIES
 
-None known to the author
+No known to the author
 
 =head1 BUGS AND LIMITATIONS
 
-None known to the author
+No, to the author, known bugs. lease see GitHub for a more precise status.
+
+=over
+
+=item * L<https://github.com/jonasbn/perl-date-holidays-abstract/issues>
+
+=back
+
+Only known limitations are:
+
+=over
+
+=item Requirement for Perl 5.6 for use
+
+=item Requirement for Perl 5.14 for development
+
+=back
 
 =head1 SEE ALSO
 
@@ -186,33 +202,59 @@ None known to the author
 
 =head1 BUGS
 
-Please report issues via CPAN RT:
+Please report issues via GitHub at:
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Date-Holidays-Abstract>
+=over
 
-or by sending mail to
+=item  * L<https://github.com/jonasbn/perl-date-holidays-abstract/issues>
 
-C<bug-Date-Holidays-Abstract@rt.cpan.org>
+=back
+
+And follow the bug reporting guidelines available at:
+
+=over
+
+=item * L<https://github.com/jonasbn/perl-date-holidays-abstract/blob/master/CONTRIBUTING.md>
+
+=back
 
 =head1 TEST/COVERAGE
 
-This module is currently at 100% test coverage
+This distribution is currently at 100% test coverage
+
+Please see L<Coveralls|https://coveralls.io/github/jonasbn/perl-date-holidays-abstract>
+
+=head1 DEVELOPMENT
+
+If you want to contribute to this distribution please consult the contribution guidelines and code of conduct for this project
+
+=over
+
+=item * L<Contribution Guidelines|https://github.com/jonasbn/perl-date-holidays-abstract/blob/master/CONTRIBUTING.md>
+
+=item * L<Contributor Covenant Code of Conduct|https://github.com/jonasbn/perl-date-holidays-abstract/blob/master/CODE_OF_CONDUCT.md>
+
+=back
+
+The distribution relies heavily on L<Dist::Zilla>, but can be developed without using L<Dist::Zilla>, but it is recommended.
 
 =head1 AUTHOR
 
-Jonas B. Nielsen, (jonasbn) - C<< <jonasbn@cpan.org> >>
+Jonas B, (jonasbn) - C<< <jonasbn@cpan.org> >>
 
 =head1 ACKNOWLEDGEMENTS
 
 =over
 
-=item * Olaf Alders for bug report resulting in release 0.08
+=item * Mohammad S Anwar (GitHub: @manwar, CPAN: MANWAR) for PR resulting in release 0.10
+
+=item * Olaf Alders (GitHub: @oalders, CPAN: OALDERS) for bug report resulting in release 0.08
 
 =back
 
 =head1 LICENSE AND COPYRIGHT
 
-Date-Holidays-Abstract is (C) by Jonas B. Nielsen, (jonasbn) 2004-2019
+Date-Holidays-Abstract is (C) by Jonas B. (jonasbn) 2004-2019
 
 Date-Holidays-Abstract is released under the Artistic License 2.0
 

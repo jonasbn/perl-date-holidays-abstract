@@ -74,7 +74,7 @@ module/class.
 \--
 
 [Date::Holidays](https://metacpan.org/pod/Date::Holidays) uses the requirements defined by this module and this
-module can therefor be used with success in conjunction with this.
+module can therefore be used with success in conjunction with this.
 
 This is an alternative to a SUPER class. I have given a lot of thought to
 programming a SUPER class, but since creating a super class for a bunch
@@ -98,11 +98,11 @@ Suggestions for changes and extensions are more than welcome.
 
 # SUBROUTINES/METHODS
 
-This class does not implement any methods, it is a abstract class.
+This class does not implement any methods, it is an abstract class.
 
 # DIAGNOSTICS
 
-This class does not implement any exceptions or error, it is a abstract class.
+This class does not implement any exceptions or error, it is an abstract class.
 
 # CONFIGURATION AND ENVIRONMENT
 
@@ -116,11 +116,18 @@ no direct dependencies apart from that class/module.
 
 # INCOMPATIBILITIES
 
-None known to the author
+No known to the author
 
 # BUGS AND LIMITATIONS
 
-None known to the author
+No, to the author, known bugs. lease see GitHub for a more precise status.
+
+- [https://github.com/jonasbn/perl-date-holidays-abstract/issues](https://github.com/jonasbn/perl-date-holidays-abstract/issues)
+
+Only known limitations are:
+
+- Requirement for Perl 5.6 for use
+- Requirement for Perl 5.14 for development
 
 # SEE ALSO
 
@@ -137,28 +144,40 @@ None known to the author
 
 # BUGS
 
-Please report issues via CPAN RT:
+Please report issues via GitHub at:
 
-    L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Date-Holidays-Abstract>
+- [https://github.com/jonasbn/perl-date-holidays-abstract/issues](https://github.com/jonasbn/perl-date-holidays-abstract/issues)
 
-or by sending mail to
+And follow the bug reporting guidelines available at:
 
-    L<bug-Date-Holidays-Abstract@rt.cpan.org>
+- [https://github.com/jonasbn/perl-date-holidays-abstract/blob/master/CONTRIBUTING.md](https://github.com/jonasbn/perl-date-holidays-abstract/blob/master/CONTRIBUTING.md)
 
 # TEST/COVERAGE
 
-This module is currently at 100% test coverage
+This distribution is currently at 100% test coverage
+
+Please see [Coveralls](https://coveralls.io/github/jonasbn/perl-date-holidays-abstract)
+
+# DEVELOPMENT
+
+If you want to contribute to this distribution please consult the contribution guidelines and code of conduct for this project
+
+- [Contribution Guidelines](https://github.com/jonasbn/perl-date-holidays-abstract/blob/master/CONTRIBUTING.md)
+- [Contributor Covenant Code of Conduct](https://github.com/jonasbn/perl-date-holidays-abstract/blob/master/CODE_OF_CONDUCT.md)
+
+The distribution relies heavily on [Dist::Zilla](https://metacpan.org/pod/Dist::Zilla), but can be developed without using [Dist::Zilla](https://metacpan.org/pod/Dist::Zilla), but it is recommended.
 
 # AUTHOR
 
-Jonas B. Nielsen, (jonasbn) - `<jonasbn@cpan.org>`
+Jonas B, (jonasbn) - `<jonasbn@cpan.org>`
 
 # ACKNOWLEDGEMENTS
 
-- Olaf Alders for bug report resulting in release 0.08
+- Mohammad S Anwar (GitHub: @manwar, CPAN: MANWAR) for PR resulting in release 0.10
+- Olaf Alders (GitHub: @oalders, CPAN: OALDERS) for bug report resulting in release 0.08
 
 # LICENSE AND COPYRIGHT
 
-Date-Holidays-Abstract is (C) by Jonas B. Nielsen, (jonasbn) 2004-2019
+Date-Holidays-Abstract is (C) by Jonas B. (jonasbn) 2004-2019
 
 Date-Holidays-Abstract is released under the Artistic License 2.0
