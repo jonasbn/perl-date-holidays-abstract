@@ -42,7 +42,7 @@ Date::Holidays::Abstract - abstract class for Date::Holidays::* packages
 
 =head1 VERSION
 
-The documentation describes the lastest release of Date::Holidays::Abstract
+The documentation describes the latest release of Date::Holidays::Abstract
 
 =head1 DESCRIPTION
 
