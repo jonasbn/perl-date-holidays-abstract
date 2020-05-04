@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dist::Zilla
-        uses: jonasbn/github-action-perl-dist-zilla
+        uses: jonasbn/github-action-perl-dist-zilla@master
