@@ -6,4 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dist::Zilla
-        uses: jonasbn/github-action-perl-dist-zilla@master
+      # REF: https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow#using-the-checkout-action
+      - uses: actions/checkout@v2
+      - uses: jonasbn/github-action-perl-dist-zilla@master
