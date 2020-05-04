@@ -1,0 +1,9 @@
+name: Dist::Zilla Action
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dist::Zilla
+        uses: jonasbn/github-action-perl-dist-zilla
