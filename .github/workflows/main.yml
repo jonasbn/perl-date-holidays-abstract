@@ -11,8 +11,8 @@ jobs:
       - name: "Install dependencies"
         uses: jonasbn/github-action-perl-dist-zilla@master
         with:
-          dzil-command: "dzil listdeps | cpanm"
+          dzil-command: 'dzil listdeps | cpanm'
       - name: "Test the distribution"
         uses: jonasbn/github-action-perl-dist-zilla@master
         with:
-          dzil-command: "dzil test --all"
+          dzil-command: 'dzil test --all'
