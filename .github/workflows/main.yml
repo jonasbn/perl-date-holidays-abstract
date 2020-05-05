@@ -4,15 +4,15 @@ on: push
 jobs:
   dzil:
     runs-on: ubuntu-latest
-    name: dzil run
+    name: "dzil run"
     steps:
-      - name: Checkout repository
+      - name: "Checkout repository"
         uses: actions/checkout@v2
-      - name: Install dependencies
+      - name: "Install dependencies"
         uses: jonasbn/github-action-perl-dist-zilla@master
         with:
-          dzil-command: dzil listdeps | cpanm
-      - name: Test the distribution
+          dzil-command: "dzil listdeps | cpanm"
+      - name: "Test the distribution"
         uses: jonasbn/github-action-perl-dist-zilla@master
         with:
-          dzil-command: dzil test --all
+          dzil-command: "dzil test --all"
