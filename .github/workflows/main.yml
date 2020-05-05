@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: jonasbn/github-action-perl-dist-zilla@master
         with:
-            arguments: 'dzil listdeps | cpanm && dzil test --all'
+            dzil-command: 'dzil listdeps | cpanm && dzil test --all'
