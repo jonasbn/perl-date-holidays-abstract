@@ -13,4 +13,3 @@ jobs:
         with:
           dzil-command: |
             cpanm --installdeps .
-            dzil test --all
