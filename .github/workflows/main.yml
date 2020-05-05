@@ -10,5 +10,5 @@ jobs:
         uses: actions/checkout@v2
       - name: "Install dependencies and test the distribution"
         uses: jonasbn/github-action-perl-dist-zilla@master
-      - run: 'dzil listdeps | cpanm'
-      - run: 'dzil test --all'
+        with:
+          dzil-command: 'dzil listdeps | cpanm && dzil test --all'
