@@ -11,4 +11,6 @@ jobs:
       - name: "Install dependencies using cpanm and cpanfile, testing the distribution using dzil"
         uses: jonasbn/github-action-perl-dist-zilla@master
         with:
-          dzil-command: 'cpanm --installdeps . -- ; dzil test --all'
+          dzil-command: |
+            cpanm --installdeps .
+            dzil test --all
