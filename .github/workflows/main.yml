@@ -8,11 +8,7 @@ jobs:
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v2
-      - name: "Install dependencies"
+      - name: "Install dependencies and test the distribution"
         uses: jonasbn/github-action-perl-dist-zilla@master
-        with:
-          dzil-command: 'dzil listdeps | cpanm'
-      - name: "Test the distribution"
-        uses: jonasbn/github-action-perl-dist-zilla@master
-        with:
-          dzil-command: 'dzil test --all'
+      - run: 'dzil listdeps | cpanm'
+      - run: 'dzil test --all'
