@@ -25,7 +25,7 @@ Please use the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
 Coding guidelines are basic, please use:
 
 - [EditorConfig](http://editorconfig.org/) configuration included in repository as `.editorconfig`
-- [PerlTidy](http://perltidy.sourceforge.net/) configuration included in repository as `.perlcriticrc`
+- [PerlTidy](http://perltidy.sourceforge.net/) configuration included in repository as `.perltidyrc`
 
 For other coding conventions please see the Perl::Critic configuration in: `t/perlcriticrc`.
 
