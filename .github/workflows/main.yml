@@ -1,6 +1,9 @@
 name: Dist::Zilla Action
-on: push
-
+on:
+  push:
+  schedule:
+    - cron: '0 * */30 * *'
+ 
 jobs:
   dzil:
     runs-on: ubuntu-latest
