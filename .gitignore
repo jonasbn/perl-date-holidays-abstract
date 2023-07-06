@@ -24,3 +24,5 @@ Makefile.PL
 *.sublime-project
 *.sublime-workspace
 Date-Holidays-Abstract-*
+.ruby-version
+_site/

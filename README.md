@@ -1,5 +1,5 @@
-[![CPAN version](https://badge.fury.io/pl/Date-Holidays-Abstract.svg)](http://badge.fury.io/pl/Date-Holidays-Abstract)
-[![Build Status](https://travis-ci.org/jonasbn/perl-date-holidays-abstract.svg?branch=master)](https://travis-ci.org/jonasbn/perl-date-holidays-abstract)
+[![CPAN version](https://badge.fury.io/pl/Date-Holidays-Abstract.svg)](https://metacpan.org/pod/Date::Holidays::Abstract)
+[![Build Status](https://github.com/jonasbn/perl-holidays-abstract/actions/workflows/ci.yml/badge.svg)](https://github.com/jonasbn/perl-date-holidays-abstract/actions/workflows/ci.yml)
 [![Coverage Status](https://coveralls.io/repos/github/jonasbn/perl-date-holidays-abstract/badge.svg)](https://coveralls.io/github/jonasbn/perl-date-holidays-abstract)
 
 # NAME
@@ -68,16 +68,16 @@ the given calendars definition.
 
 Additional arguments are at the courtesy of the author of the using module/class.
 
-[Date::Holidays](https://metacpan.org/pod/Date::Holidays) uses the requirements defined by this module and this module can therefore be used with success in conjunction with this.
+[Date::Holidays](https://metacpan.org/pod/Date%3A%3AHolidays) uses the requirements defined by this module and this module can therefore be used with success in conjunction with this.
 
 This is an alternative to a SUPER class. I have given a lot of thought to programming a SUPER class, but since creating a super class for a bunch of modules implementing handling of national holidays, an abstract class seemed a better choice.
 
-A proposed SUPER class for Date::Holidays::\* is however implemented see: [Date::Holidays::Super](https://metacpan.org/pod/Date::Holidays::Super) implement **is\_holiday** and **holidays** and expect
+A proposed SUPER class for Date::Holidays::\* is however implemented see: [Date::Holidays::Super](https://metacpan.org/pod/Date%3A%3AHolidays%3A%3ASuper) implement **is\_holiday** and **holidays** and expect
 these to be overloaded.
 
 Overloading would be necessary since nothing intelligent can be said about holidays without specifying a nationality (a part from holidays being nice but too few), and the implemented methods would be empty bodies returning empty result sets.
 
-So I am more for an abstract class and as stated I consider this class an experiment and I have implemented [Date::Holidays::Super](https://metacpan.org/pod/Date::Holidays::Super) as an alternative.
+So I am more for an abstract class and as stated I consider this class an experiment and I have implemented [Date::Holidays::Super](https://metacpan.org/pod/Date%3A%3AHolidays%3A%3ASuper) as an alternative.
 
 Suggestions for changes and extensions are more than welcome.
 
@@ -95,7 +95,7 @@ This class does not implement or require any special environment or configuratio
 
 # DEPENDENCIES
 
-This class is subclassed from [Class::Virtually::Abstract](https://metacpan.org/pod/Class::Virtually::Abstract), but holds no direct dependencies apart from that class/module.
+This class is subclassed from [Class::Virtually::Abstract](https://metacpan.org/pod/Class%3A%3AVirtually%3A%3AAbstract), but holds no direct dependencies apart from that class/module.
 
 # INCOMPATIBILITIES
 
@@ -114,16 +114,16 @@ Only known limitations are:
 
 # SEE ALSO
 
-- [Date::Holidays](https://metacpan.org/pod/Date::Holidays)
-- [Date::Holidays::Super](https://metacpan.org/pod/Date::Holidays::Super)
-- [Date::Holidays::DE](https://metacpan.org/pod/Date::Holidays::DE)
-- [Date::Holidays::DK](https://metacpan.org/pod/Date::Holidays::DK)
-- [Date::Holidays::FR](https://metacpan.org/pod/Date::Holidays::FR)
-- [Date::Holidays::UK](https://metacpan.org/pod/Date::Holidays::UK)
-- [Date::Holiday::PT](https://metacpan.org/pod/Date::Holiday::PT)
-- [Date::Japanese::Holiday](https://metacpan.org/pod/Date::Japanese::Holiday)
-- [Class::Virtual](https://metacpan.org/pod/Class::Virtual)
-- [Class::Virtually::Abstract](https://metacpan.org/pod/Class::Virtually::Abstract)
+- [Date::Holidays](https://metacpan.org/pod/Date%3A%3AHolidays)
+- [Date::Holidays::Super](https://metacpan.org/pod/Date%3A%3AHolidays%3A%3ASuper)
+- [Date::Holidays::DE](https://metacpan.org/pod/Date%3A%3AHolidays%3A%3ADE)
+- [Date::Holidays::DK](https://metacpan.org/pod/Date%3A%3AHolidays%3A%3ADK)
+- [Date::Holidays::FR](https://metacpan.org/pod/Date%3A%3AHolidays%3A%3AFR)
+- [Date::Holidays::UK](https://metacpan.org/pod/Date%3A%3AHolidays%3A%3AUK)
+- [Date::Holiday::PT](https://metacpan.org/pod/Date%3A%3AHoliday%3A%3APT)
+- [Date::Japanese::Holiday](https://metacpan.org/pod/Date%3A%3AJapanese%3A%3AHoliday)
+- [Class::Virtual](https://metacpan.org/pod/Class%3A%3AVirtual)
+- [Class::Virtually::Abstract](https://metacpan.org/pod/Class%3A%3AVirtually%3A%3AAbstract)
 
 # BUGS
 
@@ -148,7 +148,7 @@ If you want to contribute to this distribution please consult the contribution g
 - [Contribution Guidelines](https://github.com/jonasbn/perl-date-holidays-abstract/blob/master/CONTRIBUTING.md)
 - [Contributor Covenant Code of Conduct](https://github.com/jonasbn/perl-date-holidays-abstract/blob/master/CODE_OF_CONDUCT.md)
 
-The distribution relies heavily on [Dist::Zilla](https://metacpan.org/pod/Dist::Zilla), but can be developed without using [Dist::Zilla](https://metacpan.org/pod/Dist::Zilla), but it is recommended.
+The distribution relies heavily on [Dist::Zilla](https://metacpan.org/pod/Dist%3A%3AZilla), but can be developed without using [Dist::Zilla](https://metacpan.org/pod/Dist%3A%3AZilla), but it is recommended.
 
 # AUTHOR
 
