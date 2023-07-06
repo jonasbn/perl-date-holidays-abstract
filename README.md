@@ -1,6 +1,6 @@
 [![CPAN version](https://badge.fury.io/pl/Date-Holidays-Abstract.svg)](https://metacpan.org/pod/Date::Holidays::Abstract)
-[![Build Status](https://github.com/jonasbn/perl-holidays-abstract/actions/workflows/ci.yml/badge.svg)](https://github.com/jonasbn/perl-date-holidays-abstract/actions/workflows/ci.yml)
-[![Coverage Status](https://coveralls.io/repos/github/jonasbn/perl-date-holidays-abstract/badge.svg)](https://coveralls.io/github/jonasbn/perl-date-holidays-abstract)
+[![Build Status](https://github.com/jonasbn/perl-date-holidays-abstract/actions/workflows/ci.yml/badge.svg)](https://github.com/jonasbn/perl-date-holidays-abstract/actions/workflows/ci.yml)
+[![Coverage Status](https://coveralls.io/repos/github/jonasbn/perl-date-holidays-abstract/badge.svg?branch=master)](https://coveralls.io/github/jonasbn/perl-date-holidays-abstract?branch=master)
 
 # NAME
 
